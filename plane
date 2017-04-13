@@ -47,8 +47,20 @@ speed=v0;
 }
 
 public boolean hit(Ground ground){
-
+boolean hit = y+size/2>ground.y;
+if (hit) {
+y = ground.y-size/2;
+}
+return hit;
 }
 public boolean hit(Column column){
 
+if (x>column.x-column.width/2-size/2 && x<column.x+column.width/2+size/2) {
+if (y>column.y-column.gap/2+size/2 && y<column.y+column.gap/2-size/2) {
+return false;
+}
+return true;
+}
+return false;
+}
 }

@@ -31,11 +31,11 @@ BufferedImage gameOverImage;
 
 public PlaneGame() throws Exception{
 state =START;
-startImage = ImageIO.read(getClass().getResource("start.png"));
-gameOverImage=ImageIO.read(getClass().getResource("gameover.png"));
+startImage = ImageIO.read(getClass().getResource(/img/"start.png"));
+gameOverImage=ImageIO.read(getClass().getResource(/img/"gameover.png"));
 score=0;
 plane = new Plane();
-background = ImageIO.read(getClass().getResource("bg.png"));
+background = ImageIO.read(getClass().getResource(/img/"bg.png"));
 }
 
 public void paint(Graphics g){ 

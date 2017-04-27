@@ -19,7 +19,7 @@ double s;
 double alpha;
 
 public Plane() throws Exception{
-image = ImageIO.read(getClass().getResource("plane.png"));
+image = ImageIO.read(getClass().getResource("/img/plane.png"));
 width = image.getWidth();
 heigth = image.getHeight();
 x = 132;

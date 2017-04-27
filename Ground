@@ -14,7 +14,7 @@ int heigth;
 
 public Ground() throws Exception{
 
-image = ImageIO.read(getClass().getResource("ground.png"));
+image = ImageIO.read(getClass().getResource("/img/ground.png"));
 
 width = image.getWidth();
 
